@@ -460,6 +460,43 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="btn-close"></button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form name="signup_form" autocomplete="on" novalidate class="form-info">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" autofocus />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea
+              type="text"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+        </form>
+        <div class="agreement-checkbox">
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            class="agreement"
+          />
+          <label for="agreement"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a></label
+          >
+        </div>
+        <button type="submit" class="hero-btn send">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
