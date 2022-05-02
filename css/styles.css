@@ -202,7 +202,7 @@ ul {
 /* ___________________________________Button___ */
 
 .hero-btn {
-  display: inline-block;
+  display: inline-flex;
   background-color: var(--accent-color);
   color: var(--background-color);
   font-family: inherit;
@@ -212,6 +212,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
+  align-items: center;
   padding: 10px 32px;
   border-radius: 4px;
   border: hidden;
@@ -440,6 +441,7 @@ ul {
 
 .social-ftr {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .social-ftr-text {
@@ -458,6 +460,30 @@ ul {
 .social-ftr .card-soc-link:hover,
 .social-ftr .card-soc-link:focus {
   background-color: var(--accent-color);
+}
+
+/*__________ Footer-mailing______________ */
+
+.footer-mailing {
+}
+
+.footer-input {
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--secondary-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.icon-send {
+  margin-left: 10px;
 }
 
 /*___________________________________________***PORTFOLIO***__________________________________________________- */
@@ -615,9 +641,16 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  background-image: url(../images/close.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: fill var(--transform-type);
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  fill: var(--accent-color);
+  outline: none;
 }
 
 .modal-title {
@@ -639,6 +672,7 @@ ul {
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-size: 12px;
@@ -646,20 +680,53 @@ ul {
   letter-spacing: 0.01em;
 }
 
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
 .form-field label {
   margin-bottom: 4px;
 }
 
 .form-field input,
-.form-field textarea {
+.comment {
   margin: 0;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color var(--transform-type);
 }
 
-.form-field input::placeholder {
+.form-field input:focus,
+.form-field input:hover {
+  outline: none;
+  border-color: var(--accent-color);
+  fill: currentColor;
+}
+
+input:hover .modal-icon {
+  fill: var(--accent-color);
+}
+
+.comment {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  resize: none;
+}
+
+.comment::placeholder {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field input {
+  padding-left: 42px;
 }
 
 .agreement-checkbox {
@@ -671,8 +738,18 @@ ul {
 }
 
 .agreement {
-  margin-right: 8.38px;
-  fill: #212121;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  fill: var(--background-color);
+  margin-right: 0.5rem;
 }
 
 .send {
