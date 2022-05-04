@@ -457,14 +457,16 @@
         <div class="footer-mailing">
           <p class="social-ftr-text">Подпишитесь на рассылку</p>
           <form>
-            <input
-              type="email"
-              name="mail"
-              id="mail"
-              class="footer-input"
-              placeholder="E-mail"
-              required
-            />
+            <label for="mailing">
+              <input
+                type="email"
+                name="mailing"
+                id="mailing"
+                class="footer-input"
+                placeholder="E-mail"
+                required
+              />
+            </label>
             <button type="submit" class="hero-btn">
               Подписаться<svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -486,21 +488,28 @@
         <form name="signup_form" autocomplete="on" novalidate class="form-info">
           <div class="form-field">
             <label for="name">Имя</label>
-            <input type="text" name="name" id="name" required autofocus />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input"
+              required
+              autofocus
+            />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-person"></use>
             </svg>
           </div>
           <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" required />
+            <input type="tel" name="tel" id="tel" class="input" required />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-phone"></use>
             </svg>
           </div>
           <div class="form-field">
             <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail" required />
+            <input type="email" name="mail" id="mail" class="input" required />
             <svg class="modal-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-modal-mail"></use>
             </svg>
@@ -512,7 +521,7 @@
               name="comment"
               id="comment"
               placeholder="Введите текст"
-              rows="5"
+              rows="8"
               class="comment"
             ></textarea>
           </div>
