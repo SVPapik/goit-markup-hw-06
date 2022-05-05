@@ -733,7 +733,6 @@ ul {
 }
 
 .policy-label {
-  position: relative;
   display: flex;
   align-items: center;
   line-height: 1.71;
@@ -749,6 +748,11 @@ ul {
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 0.5rem;
+  transition: background-color var(--transform-type), fill var(--transform-type);
+}
+
+.policy:focus + .policy-label span {
+  border-color: var(--accent-color);
 }
 
 .policy:checked + .policy-label span {
@@ -756,12 +760,6 @@ ul {
   fill: var(--background-color);
   border: transparent;
 }
-
-/* .policy:checked + .policy-label:before {
-  background-color: var(--accent-color);
-  border-color: transparent;
-  color: var(--background-color);
-} */
 
 .send {
   display: block;

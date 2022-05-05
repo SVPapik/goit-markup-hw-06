@@ -3,10 +3,9 @@
         <symbol id="icon-send" viewBox="0 0 32 32">
             <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 0l-32 18 10.227 3.787 15.773-14.787-11.997 16.187 0.009 0.003-0.012-0.003v8.813l5.735-6.691 7.267 2.691 4.999-28z"></path>
         </symbol>
-        <
-        <svg width="13" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1.957 4.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z" fill="#fff" stroke="#fff" stroke-width=".2"/>
-        </svg>
+        <symbol id="icon-checkbox" viewBox="0 0 42 32">
+            <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
+        </symbol>
         <symbol id="icon-modal-close" viewBox="0 0 32 32">
             <path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
         </symbol>
